@@ -17,6 +17,8 @@ body {
     padding: 0;
 }
 
+/* estilos header */
+
 .header {
     background-color: var(--color-primario);
     display: flex;
@@ -25,23 +27,17 @@ body {
 }
 
 .logo {
-    padding: 20px 28px;
+    padding: 20px 0;
+    flex-shrink: 0;
 }
+
+/* estilos main */
+
+/*! estilos formulario */
 
 .formulario {
     margin-top: 33px;
     padding: 40px;
-}
-
-
-.formulario__titulo {
-    font-family: var(--fuente-principal);
-    color: black;
-    font-size: 1.5rem;
-    text-align: center;
-    margin: 0;
-    text-transform: uppercase;
-
 }
 
 .formulario__contenedor {
@@ -51,10 +47,179 @@ body {
     gap: 40px;
 }
 
+
+.formulario__titulo,
+.productos__titulo {
+    font-family: var(--fuente-principal);
+    color: black;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.formulario__form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+}
+
+.formulario__input {
+    border: 3px solid var(--color-secundario);
+    border-radius: 30px;
+    font-family: var(--fuente-secundaria);
+    font-size: 1rem;
+    color: var(--color-secundario);
+    font-weight: 600;
+    padding: 15px 10px;
+}
+
+.formulario__input::placeholder {
+    color: var(--color-secundario);
+    font-family: var(--fuente-secundaria);
+    font-weight: 600;
+    font-size: 1rem;
+
+}
+
 .formulario__botones {
     display: flex;
     gap: 13px;
     justify-content: center;
     align-items: center;
     width: 100%;
+}
+
+.formulario__boton-enviar,
+.formulario__boton-limpiar {
+    border-radius: 15px;
+    font-family: var(--fuente-secundaria);
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.formulario__boton-enviar {
+    background-color: var(--color-secundario);
+    color: var(--color-terciario);
+    border: 3px solid var(--color-secundario);
+    width: 50%;
+}
+
+.formulario__boton-limpiar {
+    width: 50%;
+    background-color: var(--color-terciario);
+    color: var(--color-secundario);
+    border: 3px solid var(--color-secundario);
+}
+
+/*! estilos mis productos */
+
+.productos {
+    display: flex;
+    padding: 58px 0;
+    flex-direction: column;
+    gap: 44px;
+}
+
+.productos__lista {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0 16px;
+    padding-bottom: 44px;
+    gap: 10px;
+    overflow-y: auto;
+}
+
+.productos__lista::-webkit-scrollbar {
+    width: 8px;
+    /* Tamaño del scroll en vertical */
+    height: 12px;
+    /* Tamaño del scroll en horizontal */
+}
+
+.productos__lista::-webkit-scrollbar-thumb {
+    background: #D6D6D6;
+    border-radius: 10px;
+}
+
+/* estilos card */
+
+.productos__item {
+    -webkit-box-shadow: -7px 7px 9px 0px rgba(0, 0, 0, 0.52);
+    -moz-box-shadow: -7px 7px 9px 0px rgba(0, 0, 0, 0.52);
+    box-shadow: -7px 7px 9px 0px rgba(0, 0, 0, 0.52);
+    display: flex;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: var(--color-primario);
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.productos__imagen {
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+.productos__nombre {
+    font-family: var(--fuente-secundaria);
+    color: var(--color-terciario);
+    font-size: 0.938rem;
+    margin: 0;
+}
+
+.productos__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.productos__precio {
+    margin: 0;
+    font-family: var(--fuente-secundaria);
+    color: var(--color-terciario);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.productos__boton {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.productos__boton img {
+    flex-shrink: 0;
+}
+
+/* estilos footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-primario);
+    color: var(--color-terciario);
+    font-family: var(--fuente-secundaria);
+    padding: 32px;
+    gap: 10px;
+}
+
+.footer__texto,
+.footer__texto-plataforma {
+    margin: 0;
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-terciario);
+    line-height: 16px;
+}
+
+.footer__texto-plataforma {
+    font-weight: 100;
 }

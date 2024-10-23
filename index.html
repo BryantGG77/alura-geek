@@ -22,12 +22,12 @@
                 <h2 class="formulario__titulo">Agregar producto:</h2>
 
                 <form class="formulario__form">
-                    <input type="text" name="nombre" placeholder="Nombre" id="nombre">
-                    <input type="text" name="precio" placeholder="Precio" id="precio">
-                    <input type="text" name="imagen" placeholder="Imagen" id="imagen">
+                    <input class="formulario__input" type="text" name="nombre" placeholder="Nombre..." id="nombre">
+                    <input class="formulario__input" type="text" name="precio" placeholder="Precio..." id="precio">
+                    <input class="formulario__input" type="text" name="imagen" placeholder="Imagen..." id="imagen">
                     <div class="formulario__botones">
-                        <button type="submit">Enviar</button>
-                        <button>Limpiar</button>
+                        <button class="formulario__boton-enviar" type="submit">Enviar</button>
+                        <button class="formulario__boton-limpiar" type="reset">Limpiar</button>
                     </div>
                 </form>
             </section>
@@ -36,21 +36,99 @@
         <section class="productos">
             <h2 class="productos__titulo">Mis Productos:</h2>
             <ul class="productos__lista">
-                <li>Producto 1</li>
-                <li>Producto 2</li>
-                <li>Producto 3</li>
-                <li>Producto 4</li>
-                <li>Producto 5</li>
+                <li class="productos__item">
+                    <img class="productos__imagen" src="/assets/image 2.png" alt="Stormtrooper">
+                    <p class="productos__nombre">Stormtrooper</p>
+                    <div class="productos__info">
+                        <p class="productos__precio">$ 60,00</p>
+                        <button class="productos__boton"><img src="/assets/Vector.png" alt=""></button>
+                    </div>
+                </li>
+                <li class="productos__item">
+                    <img class="productos__imagen" src="/assets/image 2.png" alt="Stormtrooper">
+                    <p class="productos__nombre">Stormtrooper</p>
+                    <div class="productos__info">
+                        <p class="productos__precio">$ 60,00</p>
+                        <button class="productos__boton"><img src="/assets/Vector.png" alt=""></button>
+                    </div>
+                </li>
+                <li class="productos__item">
+                    <img class="productos__imagen" src="/assets/image 2.png" alt="Stormtrooper">
+                    <p class="productos__nombre">Stormtrooper</p>
+                    <div class="productos__info">
+                        <p class="productos__precio">$ 60,00</p>
+                        <button class="productos__boton"><img src="/assets/Vector.png" alt=""></button>
+                    </div>
+                </li>
+                <li class="productos__item">
+                    <img class="productos__imagen" src="/assets/image 2.png" alt="Stormtrooper">
+                    <p class="productos__nombre">Stormtrooper</p>
+                    <div class="productos__info">
+                        <p class="productos__precio">$ 60,00</p>
+                        <button class="productos__boton"><img src="/assets/Vector.png" alt=""></button>
+                    </div>
+                </li>
+                <li class="productos__item">
+                    <img class="productos__imagen" src="/assets/image 2.png" alt="Stormtrooper">
+                    <p class="productos__nombre">Stormtrooper</p>
+                    <div class="productos__info">
+                        <p class="productos__precio">$ 60,00</p>
+                        <button class="productos__boton"><img src="/assets/Vector.png" alt=""></button>
+                    </div>
+                </li>
+            </ul>
+            <ul class="productos__lista">
+                <li class="productos__item">
+                    <img class="productos__imagen" src="/assets/image 2.png" alt="Stormtrooper">
+                    <p class="productos__nombre">Stormtrooper</p>
+                    <div class="productos__info">
+                        <p class="productos__precio">$ 60,00</p>
+                        <button class="productos__boton"><img src="/assets/Vector.png" alt=""></button>
+                    </div>
+                </li>
+                <li class="productos__item">
+                    <img class="productos__imagen" src="/assets/image 2.png" alt="Stormtrooper">
+                    <p class="productos__nombre">Stormtrooper</p>
+                    <div class="productos__info">
+                        <p class="productos__precio">$ 60,00</p>
+                        <button class="productos__boton"><img src="/assets/Vector.png" alt=""></button>
+                    </div>
+                </li>
+                <li class="productos__item">
+                    <img class="productos__imagen" src="/assets/image 2.png" alt="Stormtrooper">
+                    <p class="productos__nombre">Stormtrooper</p>
+                    <div class="productos__info">
+                        <p class="productos__precio">$ 60,00</p>
+                        <button class="productos__boton"><img src="/assets/Vector.png" alt=""></button>
+                    </div>
+                </li>
+                <li class="productos__item">
+                    <img class="productos__imagen" src="/assets/image 2.png" alt="Stormtrooper">
+                    <p class="productos__nombre">Stormtrooper</p>
+                    <div class="productos__info">
+                        <p class="productos__precio">$ 60,00</p>
+                        <button class="productos__boton"><img src="/assets/Vector.png" alt=""></button>
+                    </div>
+                </li>
+                <li class="productos__item">
+                    <img class="productos__imagen" src="/assets/image 2.png" alt="Stormtrooper">
+                    <p class="productos__nombre">Stormtrooper</p>
+                    <div class="productos__info">
+                        <p class="productos__precio">$ 60,00</p>
+                        <button class="productos__boton"><img src="/assets/Vector.png" alt=""></button>
+                    </div>
+                </li>
             </ul>
         </section>
 
     </main>
 
-    <footer>
-        <img src="/assets/Logo.png" alt="Logo-AluraGeek">
-        <p>Desarrollado por Brayan Velasquez</p>
-        <p>Alura latam - 2024</p>
+    <footer class="footer">
+        <img class="logo__footer" src="/assets/Logo.png" alt="Logo-AluraGeek">
+        <p class="footer__texto">Desarrollado por Brayan Velasquez</p>
+        <p class="footer__texto-plataforma">Alura latam - 2024</p>
     </footer>
+    <script src="main.js"></script>
 </body>
 
 </html>
