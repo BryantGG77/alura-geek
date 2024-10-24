@@ -165,6 +165,8 @@ body {
 .productos__imagen {
     border: 3px solid black;
     border-radius: 5px;
+    max-width: 176px;
+    max-height: 174px;
 }
 
 .productos__nombre {

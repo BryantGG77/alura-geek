@@ -1,0 +1,100 @@
+{
+    "productos": [
+        {
+            "id": 1,
+            "nombre": "Front-end vs. Back-end: ¡Descubre el lado perfecto para ti! #LuchaDev",
+            "precio": "3 mil visualizaciones",
+            "imagen": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true"
+        },
+        {
+            "id": 2,
+            "nombre": "¿Cómo ser un Profesional en T? Conociendo al Tech Guide",
+            "precio": "1,5 mil visualizaciones",
+            "imagen": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true"
+        },
+        {
+            "id": 3,
+            "nombre": "¡Domina CSS Flexbox con FlexboxFroggy! Aprende jugando en este desafío divertido",
+            "precio": "30 mil visualizaciones",
+            "imagen": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true"
+        },
+        {
+            "id": 4,
+            "nombre": "¿Qué significa ser un Desarrollador Full Stack?",
+            "precio": "2,5 mil visualizaciones",
+            "imagen": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true"
+        },
+        {
+            "id": 5,
+            "nombre": "Como utilizar el Display block, inline, inline-block #aluramás",
+            "precio": "1,2 mil visualizaciones",
+            "imagen": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true"
+        },
+        {
+            "id": 6,
+            "nombre": "Explorando el poder del Back-End en el Desarrollo Web",
+            "precio": "1,6 mil visualizaciones",
+            "imagen": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true"
+        },
+        {
+            "id": 7,
+            "nombre": "¿Sabes cómo organizar tu rutina de estudio? Descubre aquí | #aluramás",
+            "precio": "3,2 mil visualizaciones",
+            "imagen": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true"
+        },
+        {
+            "id": 8,
+            "nombre": "Cómo evitar robo de vehículo con Inteligencia Artificial | #aluramás",
+            "precio": "1,2 mil visualizaciones",
+            "imagen": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true"
+        },
+        {
+            "nombre": "Descubre el poder del Machine Learning",
+            "precio": "1 mil visualizaciones",
+            "imagen": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true",
+            "id": 9
+        },
+        {
+            "nombre": "Desvelando los secretos del Chat GPT: La revolución de la IA",
+            "precio": "9 mil visualizaciones",
+            "imagen": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true",
+            "id": 10
+        },
+        {
+            "nombre": "Domina tu flujo de trabajo con Kanban: ¡La guía definitiva para la eficiencia!",
+            "precio": "4 mil visualizaciones",
+            "imagen": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true",
+            "id": 11
+        },
+        {
+            "nombre": "Empresas que aprenden | #aluramás",
+            "precio": "7 mil visualizaciones",
+            "imagen": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true",
+            "id": 12
+        },
+        {
+            "nombre": "Aprendiendo a instalar VSCode | #aluramás",
+            "precio": "428 visualizaciones",
+            "imagen": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true",
+            "id": 13
+        },
+        {
+            "nombre": "Semana de la Programación: Tus primeros pasos en programación",
+            "precio": "7 mil visualizaciones",
+            "imagen": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true",
+            "id": 14
+        },
+        {
+            "nombre": "Cómo ser más productivo | #aluramás",
+            "precio": "9 mil visualizaciones",
+            "imagen": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true",
+            "id": 15
+        },
+        {
+            "nombre": "Hola q tal",
+            "precio": "7 mil visualizaciones",
+            "imagen": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true",
+            "id": 16
+        }
+    ]
+}
