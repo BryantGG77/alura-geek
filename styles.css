@@ -15,6 +15,7 @@ html,
 body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* estilos header */
@@ -131,6 +132,7 @@ body {
     padding-bottom: 44px;
     gap: 10px;
     overflow-y: auto;
+
 }
 
 .productos__lista::-webkit-scrollbar {
@@ -222,4 +224,31 @@ body {
 
 .footer__texto-plataforma {
     font-weight: 100;
+}
+
+
+@media (min-width:1050px) {
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        padding: 110px 70px;
+    }
+
+    .productos {
+        padding: 40px;
+        gap: 40px;
+    }
+
+    .productos__lista {
+        flex-wrap: wrap;
+        overflow-x: scroll;
+        overflow-x: hidden;
+        max-width: 678px;
+        max-height: 971px;
+    }
+
+    .formulario {
+        margin-top: 0;
+    }
 }
