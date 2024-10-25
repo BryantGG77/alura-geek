@@ -165,8 +165,8 @@ body {
 .productos__imagen {
     border: 3px solid black;
     border-radius: 5px;
-    max-width: 176px;
-    max-height: 174px;
+    width: 176px;
+    height: 174px;
 }
 
 .productos__nombre {
@@ -233,7 +233,7 @@ body {
     main {
         display: flex;
         flex-direction: row-reverse;
-        justify-content: center;
+        justify-content: space-around;
         padding: 110px 70px;
     }
 
