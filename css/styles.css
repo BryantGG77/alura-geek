@@ -115,6 +115,21 @@ body {
     border: 3px solid var(--color-secundario);
 }
 
+.mensaje__error {
+    color: rgb(255, 33, 33);
+    font-family: var(--fuente-secundaria);
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+
+.mensaje__exito {
+    color: rgb(0, 131, 0);
+    font-family: var(--fuente-secundaria);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
 /*! estilos mis productos */
 
 .productos {
@@ -131,8 +146,7 @@ body {
     padding: 0 16px;
     padding-bottom: 44px;
     gap: 10px;
-    overflow-y: auto;
-
+    overflow-x: auto;
 }
 
 .productos__lista::-webkit-scrollbar {
@@ -160,13 +174,16 @@ body {
     flex-direction: column;
     gap: 10px;
     padding: 10px;
+    width: 196px;
+    height: 258px;
+    flex-shrink: 0;
 }
 
 .productos__imagen {
     border: 3px solid black;
     border-radius: 5px;
-    width: 176px;
     height: 174px;
+    object-fit: cover;
 }
 
 .productos__nombre {
@@ -237,6 +254,8 @@ body {
         padding: 110px 70px;
     }
 
+
+
     .productos {
         padding: 40px;
         gap: 40px;
@@ -244,13 +263,14 @@ body {
 
     .productos__lista {
         flex-wrap: wrap;
-        overflow-x: scroll;
+        overflow-y: scroll;
         overflow-x: hidden;
-        max-width: 678px;
+        max-width: 750px;
         max-height: 971px;
     }
 
     .formulario {
+        width: 472px;
         margin-top: 0;
     }
 }

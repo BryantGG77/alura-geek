@@ -1,8 +1,8 @@
 {
   "name": "alura-geek",
   "version": "1.0.0",
-  "description": "Tienda de productos gamers",
-  "main": "main.js",
+  "description": "plataforma de creacion y eliminacion de productos",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

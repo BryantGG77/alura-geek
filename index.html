@@ -4,131 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <title>AluraGeek</title>
 </head>
 
-<body>
-    <header class="header">
-        <section class="header__logo">
-            <img class="logo" src="/assets/Logo.png" alt="Logo-AluraGeek">
+
+<header class="header">
+    <section class="header__logo">
+        <img class="logo" src="/assets/Logo.png" alt="Logo-AluraGeek">
+    </section>
+</header>
+<main>
+
+    <section class="formulario">
+        <section class="formulario__contenedor">
+
+            <h2 class="formulario__titulo">Agregar producto:</h2>
+
+            <form class="formulario__form" data-formulario>
+                <input class="formulario__input" type="text" required name="nombre" placeholder="Nombre..." id="nombre"
+                    data-nombre>
+                <input class="formulario__input" type="text" required name="precio" placeholder="Precio..." id="precio"
+                    data-precio>
+                <input class="formulario__input" type="text" required name="imagen" placeholder="Imagen..." id="imagen"
+                    data-imagen>
+                <div class="formulario__botones">
+                    <button class="formulario__boton-enviar" type="submit">Enviar</button>
+                    <button class="formulario__boton-limpiar" type="reset">Limpiar</button>
+                </div>
+            </form>
         </section>
-    </header>
-    <main>
+    </section>
 
-        <section class="formulario">
-            <section class="formulario__contenedor">
+    <section class="productos">
+        <h2 class="productos__titulo">Mis Productos:</h2>
+        <ul class="productos__lista" data-lista>
+        </ul>
+    </section>
 
-                <h2 class="formulario__titulo">Agregar producto:</h2>
+</main>
 
-                <form class="formulario__form">
-                    <input class="formulario__input" type="text" name="nombre" placeholder="Nombre..." id="nombre">
-                    <input class="formulario__input" type="text" name="precio" placeholder="Precio..." id="precio">
-                    <input class="formulario__input" type="text" name="imagen" placeholder="Imagen..." id="imagen">
-                    <div class="formulario__botones">
-                        <button class="formulario__boton-enviar" type="submit">Enviar</button>
-                        <button class="formulario__boton-limpiar" type="reset">Limpiar</button>
-                    </div>
-                </form>
-            </section>
-        </section>
-
-        <section class="productos">
-            <h2 class="productos__titulo">Mis Productos:</h2>
-            <ul class="productos__lista">
-                <li class="productos__item">
-                    <img class="productos__imagen" src="/assets/image 2.png" alt="Stormtrooper">
-                    <p class="productos__nombre">Stormtrooper</p>
-                    <div class="productos__info">
-                        <p class="productos__precio">$ 60,00</p>
-                        <button class="productos__boton"><img src="/assets/Vector.png" alt=""></button>
-                    </div>
-                </li>
-                <li class="productos__item">
-                    <img class="productos__imagen" src="/assets/image 2.png" alt="Stormtrooper">
-                    <p class="productos__nombre">Stormtrooper</p>
-                    <div class="productos__info">
-                        <p class="productos__precio">$ 60,00</p>
-                        <button class="productos__boton"><img src="/assets/Vector.png" alt=""></button>
-                    </div>
-                </li>
-                <li class="productos__item">
-                    <img class="productos__imagen" src="/assets/image 2.png" alt="Stormtrooper">
-                    <p class="productos__nombre">Stormtrooper</p>
-                    <div class="productos__info">
-                        <p class="productos__precio">$ 60,00</p>
-                        <button class="productos__boton"><img src="/assets/Vector.png" alt=""></button>
-                    </div>
-                </li>
-                <li class="productos__item">
-                    <img class="productos__imagen" src="/assets/image 2.png" alt="Stormtrooper">
-                    <p class="productos__nombre">Stormtrooper</p>
-                    <div class="productos__info">
-                        <p class="productos__precio">$ 60,00</p>
-                        <button class="productos__boton"><img src="/assets/Vector.png" alt=""></button>
-                    </div>
-                </li>
-                <li class="productos__item">
-                    <img class="productos__imagen" src="/assets/image 2.png" alt="Stormtrooper">
-                    <p class="productos__nombre">Stormtrooper</p>
-                    <div class="productos__info">
-                        <p class="productos__precio">$ 60,00</p>
-                        <button class="productos__boton"><img src="/assets/Vector.png" alt=""></button>
-                    </div>
-                </li>
-            </ul>
-            <ul class="productos__lista">
-                <li class="productos__item">
-                    <img class="productos__imagen" src="/assets/image 2.png" alt="Stormtrooper">
-                    <p class="productos__nombre">Stormtrooper</p>
-                    <div class="productos__info">
-                        <p class="productos__precio">$ 60,00</p>
-                        <button class="productos__boton"><img src="/assets/Vector.png" alt=""></button>
-                    </div>
-                </li>
-                <li class="productos__item">
-                    <img class="productos__imagen" src="/assets/image 2.png" alt="Stormtrooper">
-                    <p class="productos__nombre">Stormtrooper</p>
-                    <div class="productos__info">
-                        <p class="productos__precio">$ 60,00</p>
-                        <button class="productos__boton"><img src="/assets/Vector.png" alt=""></button>
-                    </div>
-                </li>
-                <li class="productos__item">
-                    <img class="productos__imagen" src="/assets/image 2.png" alt="Stormtrooper">
-                    <p class="productos__nombre">Stormtrooper</p>
-                    <div class="productos__info">
-                        <p class="productos__precio">$ 60,00</p>
-                        <button class="productos__boton"><img src="/assets/Vector.png" alt=""></button>
-                    </div>
-                </li>
-                <li class="productos__item">
-                    <img class="productos__imagen" src="/assets/image 2.png" alt="Stormtrooper">
-                    <p class="productos__nombre">Stormtrooper</p>
-                    <div class="productos__info">
-                        <p class="productos__precio">$ 60,00</p>
-                        <button class="productos__boton"><img src="/assets/Vector.png" alt=""></button>
-                    </div>
-                </li>
-                <li class="productos__item">
-                    <img class="productos__imagen" src="/assets/image 2.png" alt="Stormtrooper">
-                    <p class="productos__nombre">Stormtrooper</p>
-                    <div class="productos__info">
-                        <p class="productos__precio">$ 60,00</p>
-                        <button class="productos__boton"><img src="/assets/Vector.png" alt=""></button>
-                    </div>
-                </li>
-            </ul>
-        </section>
-
-    </main>
-
-    <footer class="footer">
-        <img class="logo__footer" src="/assets/Logo.png" alt="Logo-AluraGeek">
-        <p class="footer__texto">Desarrollado por Brayan Velasquez</p>
-        <p class="footer__texto-plataforma">Alura latam - 2024</p>
-    </footer>
-    <script src="main.js"></script>
+<footer class="footer">
+    <img class="logo__footer" src="/assets/Logo.png" alt="Logo-AluraGeek">
+    <p class="footer__texto">Desarrollado por Brayan Velasquez</p>
+    <p class="footer__texto-plataforma">Alura latam - 2024</p>
+</footer>
+<script src="js/mostrarProductos.js" type="module"></script>
+<script src="js/crearProducto.js" type="module"></script>
+<script src="js/borrarProducto.js" type="module"></script>
 </body>
 
 </html>

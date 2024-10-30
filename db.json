@@ -1,100 +1,64 @@
 {
-    "productos": [
-        {
-            "id": 1,
-            "nombre": "Front-end vs. Back-end: ¡Descubre el lado perfecto para ti! #LuchaDev",
-            "precio": "3 mil visualizaciones",
-            "imagen": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true"
-        },
-        {
-            "id": 2,
-            "nombre": "¿Cómo ser un Profesional en T? Conociendo al Tech Guide",
-            "precio": "1,5 mil visualizaciones",
-            "imagen": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true"
-        },
-        {
-            "id": 3,
-            "nombre": "¡Domina CSS Flexbox con FlexboxFroggy! Aprende jugando en este desafío divertido",
-            "precio": "30 mil visualizaciones",
-            "imagen": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true"
-        },
-        {
-            "id": 4,
-            "nombre": "¿Qué significa ser un Desarrollador Full Stack?",
-            "precio": "2,5 mil visualizaciones",
-            "imagen": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true"
-        },
-        {
-            "id": 5,
-            "nombre": "Como utilizar el Display block, inline, inline-block #aluramás",
-            "precio": "1,2 mil visualizaciones",
-            "imagen": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true"
-        },
-        {
-            "id": 6,
-            "nombre": "Explorando el poder del Back-End en el Desarrollo Web",
-            "precio": "1,6 mil visualizaciones",
-            "imagen": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true"
-        },
-        {
-            "id": 7,
-            "nombre": "¿Sabes cómo organizar tu rutina de estudio? Descubre aquí | #aluramás",
-            "precio": "3,2 mil visualizaciones",
-            "imagen": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true"
-        },
-        {
-            "id": 8,
-            "nombre": "Cómo evitar robo de vehículo con Inteligencia Artificial | #aluramás",
-            "precio": "1,2 mil visualizaciones",
-            "imagen": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true"
-        },
-        {
-            "nombre": "Descubre el poder del Machine Learning",
-            "precio": "1 mil visualizaciones",
-            "imagen": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true",
-            "id": 9
-        },
-        {
-            "nombre": "Desvelando los secretos del Chat GPT: La revolución de la IA",
-            "precio": "9 mil visualizaciones",
-            "imagen": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true",
-            "id": 10
-        },
-        {
-            "nombre": "Domina tu flujo de trabajo con Kanban: ¡La guía definitiva para la eficiencia!",
-            "precio": "4 mil visualizaciones",
-            "imagen": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true",
-            "id": 11
-        },
-        {
-            "nombre": "Empresas que aprenden | #aluramás",
-            "precio": "7 mil visualizaciones",
-            "imagen": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true",
-            "id": 12
-        },
-        {
-            "nombre": "Aprendiendo a instalar VSCode | #aluramás",
-            "precio": "428 visualizaciones",
-            "imagen": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true",
-            "id": 13
-        },
-        {
-            "nombre": "Semana de la Programación: Tus primeros pasos en programación",
-            "precio": "7 mil visualizaciones",
-            "imagen": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true",
-            "id": 14
-        },
-        {
-            "nombre": "Cómo ser más productivo | #aluramás",
-            "precio": "9 mil visualizaciones",
-            "imagen": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true",
-            "id": 15
-        },
-        {
-            "nombre": "Hola q tal",
-            "precio": "7 mil visualizaciones",
-            "imagen": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true",
-            "id": 16
-        }
-    ]
+  "productos": [
+    {
+      "id": "1",
+      "nombre": "Nintendo NES",
+      "precio": 79.99,
+      "imagen": "https://images.pexels.com/photos/1637439/pexels-photo-1637439.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": "2",
+      "nombre": "Control Nintendo NES",
+      "precio": 14.99,
+      "imagen": "https://images.pexels.com/photos/776092/pexels-photo-776092.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": "3",
+      "nombre": "Super Nintendo (SNES)",
+      "precio": 99.99,
+      "imagen": "https://images.pexels.com/photos/4502978/pexels-photo-4502978.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": "4",
+      "nombre": "Cartucho Super Mario Bros. NES",
+      "precio": 19.99,
+      "imagen": "https://cdn.pixabay.com/photo/2016/07/30/21/03/mario-1558012_1280.jpg"
+    },
+    {
+      "id": "5",
+      "nombre": "Game Boy Clasico",
+      "precio": 49.99,
+      "imagen": "https://cdn.pixabay.com/photo/2019/01/03/22/37/game-boy-3912103_1280.jpg"
+    },
+    {
+      "id": "6",
+      "nombre": "Sega Genesis",
+      "precio": 89.99,
+      "imagen": "https://cdn.pixabay.com/photo/2017/04/04/18/14/video-game-console-2202631_960_720.jpg"
+    },
+    {
+      "id": "7",
+      "nombre": "PlayStation 1",
+      "precio": 59.99,
+      "imagen": "https://images.pexels.com/photos/4219892/pexels-photo-4219892.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": "8",
+      "nombre": "Atari 2600",
+      "precio": 49.99,
+      "imagen": "https://images.pexels.com/photos/1373100/pexels-photo-1373100.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": "9",
+      "nombre": "Cartucho Pac-Man Atari 2600",
+      "precio": 9.99,
+      "imagen": "https://images.pexels.com/photos/19020381/pexels-photo-19020381/free-photo-of-tecnologia-juego-partido-divertido.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": "10",
+      "nombre": "Control PlayStation4",
+      "precio": 200,
+      "imagen": "https://cdn.pixabay.com/photo/2018/09/23/02/47/controller-3696656_1280.jpg"
+    }
+  ]
 }
