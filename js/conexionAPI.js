@@ -1,19 +1,18 @@
 async function listarProductos() {
-    const conexion = await fetch('http://localhost:3001/productos');
+    const conexion = await fetch('https://fake-api-three-lovat.vercel.app/productos');
     const conexionConvertida = conexion.json();
     //console.log(conexionConvertida);
     return (conexionConvertida);
 }
 
-async function agregarProducto(id, nombre, precio, imagen) {
+async function agregarProducto(nombre, precio, imagen) {
     // Hacemos la solicitud para agregar el nuevo producto
-    const conexion = await fetch('http://localhost:3001/productos', {
+    const conexion = await fetch('https://fake-api-three-lovat.vercel.app/productos', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            id: `${id}`,
             nombre: nombre,
             precio: precio,
             imagen: imagen
@@ -32,7 +31,7 @@ async function agregarProducto(id, nombre, precio, imagen) {
 
 // Función para eliminar un producto
 async function eliminarProducto(id) {
-    const conexion = await fetch(`http://localhost:3001/productos/${id}`, {
+    const conexion = await fetch(`https://fake-api-three-lovat.vercel.app/productos/${id}`, {
         method: "DELETE"
     });
 

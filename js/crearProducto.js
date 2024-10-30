@@ -12,13 +12,7 @@ async function crearProducto(evento) {
     const imagen = document.querySelector("[data-imagen]").value;
 
     try {
-        // Primero obtenemos la lista actual de productos
-        const productosExistentes = await fetch('http://localhost:3001/productos');
-        const productos = productosExistentes.json();
-
-        // Luego calculamos el nuevo ID basándonos en el número de productos actuales
-        const id = productos.length + 1;
-        await conexionAPI.agregarProducto(id, nombre, precio, imagen);
+        await conexionAPI.agregarProducto(nombre, precio, imagen);
     } catch (e) {
         alert(e)
     }

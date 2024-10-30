@@ -1,64 +1,58 @@
 {
   "productos": [
     {
-      "id": "1",
+      "id": 1,
       "nombre": "Nintendo NES",
       "precio": 79.99,
       "imagen": "https://images.pexels.com/photos/1637439/pexels-photo-1637439.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
-      "id": "2",
+      "id": 2,
       "nombre": "Control Nintendo NES",
       "precio": 14.99,
       "imagen": "https://images.pexels.com/photos/776092/pexels-photo-776092.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
-      "id": "3",
+      "id": 3,
       "nombre": "Super Nintendo (SNES)",
       "precio": 99.99,
       "imagen": "https://images.pexels.com/photos/4502978/pexels-photo-4502978.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
-      "id": "4",
+      "id": 4,
       "nombre": "Cartucho Super Mario Bros. NES",
       "precio": 19.99,
       "imagen": "https://cdn.pixabay.com/photo/2016/07/30/21/03/mario-1558012_1280.jpg"
     },
     {
-      "id": "5",
+      "id": 5,
       "nombre": "Game Boy Clasico",
       "precio": 49.99,
       "imagen": "https://cdn.pixabay.com/photo/2019/01/03/22/37/game-boy-3912103_1280.jpg"
     },
     {
-      "id": "6",
+      "id": 6,
       "nombre": "Sega Genesis",
       "precio": 89.99,
       "imagen": "https://cdn.pixabay.com/photo/2017/04/04/18/14/video-game-console-2202631_960_720.jpg"
     },
     {
-      "id": "7",
+      "id": 7,
       "nombre": "PlayStation 1",
       "precio": 59.99,
       "imagen": "https://images.pexels.com/photos/4219892/pexels-photo-4219892.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
-      "id": "8",
+      "id": 8,
       "nombre": "Atari 2600",
       "precio": 49.99,
       "imagen": "https://images.pexels.com/photos/1373100/pexels-photo-1373100.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
-      "id": "9",
+      "id": 9,
       "nombre": "Cartucho Pac-Man Atari 2600",
       "precio": 9.99,
       "imagen": "https://images.pexels.com/photos/19020381/pexels-photo-19020381/free-photo-of-tecnologia-juego-partido-divertido.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    },
-    {
-      "id": "NaN",
-      "nombre": "Control PlayStation4",
-      "precio": 200,
-      "imagen": "https://cdn.pixabay.com/photo/2018/09/23/02/47/controller-3696656_1280.jpg"
     }
   ]
 }
