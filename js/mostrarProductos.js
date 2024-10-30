@@ -21,8 +21,13 @@ function crearCarta(id, nombre, imagen, precio) {
 }
 
 async function listarProductos() {
-    const listaAPI = await conexionAPI.listarProductos();
-    listaAPI.forEach(producto => lista.appendChild(crearCarta(producto.id, producto.nombre, producto.imagen, producto.precio)));
+
+    try {
+        const listaAPI = await conexionAPI.listarProductos();
+        listaAPI.forEach(producto => lista.appendChild(crearCarta(producto.id, producto.nombre, producto.imagen, producto.precio)));
+    } catch {
+        lista.innerHTML = "<h2 class='mensaje__no-encontrado'>No se encontraron productos :(</h2>"
+    }
 }
 
 listarProductos();

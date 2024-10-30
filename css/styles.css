@@ -139,6 +139,14 @@ body {
     gap: 44px;
 }
 
+
+.mensaje__no-encontrado {
+    font-family: var(--fuente-secundaria);
+    color: var(--color-primario);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
 .productos__lista {
     display: flex;
     list-style: none;
