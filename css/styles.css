@@ -255,7 +255,7 @@ body {
 }
 
 
-@media (min-width:1050px) {
+@media (min-width:1150px) {
     main {
         display: flex;
         flex-direction: row-reverse;

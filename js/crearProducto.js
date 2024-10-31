@@ -11,8 +11,15 @@ async function crearProducto(evento) {
     const precio = parseFloat(document.querySelector("[data-precio]").value);
     const imagen = document.querySelector("[data-imagen]").value;
 
+    const mensaje = document.createElement("p");
+    formulario.appendChild(mensaje);
     try {
-        await conexionAPI.agregarProducto(nombre, precio, imagen);
+        if (isNaN(precio)) { // Comprobar si precio es un número
+            mensaje.textContent = "El precio debe ser un número válido";
+            mensaje.classList.add("mensaje__error");
+        } else {
+            await conexionAPI.agregarProducto(nombre, precio, imagen);
+        }
     } catch (e) {
         alert(e)
     }
