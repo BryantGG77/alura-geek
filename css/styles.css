@@ -25,6 +25,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: var(--color-primario);
+    box-shadow: inset 23px 23px 46px #2c006a,
+        inset -23px -23px 46px #7a00ff;
+
 }
 
 .logo {
@@ -33,6 +37,10 @@ body {
 }
 
 /* estilos main */
+
+main {
+    background-color: var(--color-terciario);
+}
 
 /*! estilos formulario */
 
@@ -99,21 +107,20 @@ body {
     font-size: 1.25rem;
     font-weight: 500;
     padding: 10px;
-}
-
-.formulario__boton-enviar {
-    background-color: var(--color-secundario);
-    color: var(--color-terciario);
-    border: 3px solid var(--color-secundario);
-    width: 50%;
-}
-
-.formulario__boton-limpiar {
     width: 50%;
     background-color: var(--color-terciario);
     color: var(--color-secundario);
     border: 3px solid var(--color-secundario);
 }
+
+.formulario__boton-enviar:hover,
+.formulario__boton-limpiar:hover {
+    background-color: var(--color-primario);
+    color: var(--color-terciario);
+    border: 3px solid var(--color-primario);
+    width: 50%;
+}
+
 
 .mensaje__error {
     color: rgb(255, 33, 33);
@@ -154,7 +161,7 @@ body {
     margin: 0;
     padding: 0 16px;
     padding-bottom: 44px;
-    gap: 10px;
+    gap: 30px;
     overflow-x: auto;
 }
 
@@ -173,11 +180,13 @@ body {
 /* estilos card */
 
 .productos__item {
-    -webkit-box-shadow: -7px 7px 9px 0px rgba(0, 0, 0, 0.52);
+    /* -webkit-box-shadow: -7px 7px 9px 0px rgba(0, 0, 0, 0.52);
     -moz-box-shadow: -7px 7px 9px 0px rgba(0, 0, 0, 0.52);
-    box-shadow: -7px 7px 9px 0px rgba(0, 0, 0, 0.52);
+    box-shadow: -7px 7px 9px 0px rgba(0, 0, 0, 0.52); */
+    box-shadow: inset -20px -20px 60px #370084,
+        inset 20px 20px 60px #6f00ff;
     display: flex;
-    border: 3px solid black;
+    /* border: 3px solid black; */
     border-radius: 10px;
     background-color: var(--color-primario);
     flex-direction: column;
@@ -226,6 +235,8 @@ body {
     flex-shrink: 0;
 }
 
+
+
 /* estilos footer */
 
 .footer {
@@ -238,6 +249,8 @@ body {
     font-family: var(--fuente-secundaria);
     padding: 32px;
     gap: 10px;
+    box-shadow: inset 23px 23px 46px #2c006a,
+        inset -23px -23px 46px #7a00ff;
 }
 
 .footer__texto,
@@ -249,6 +262,45 @@ body {
     color: var(--color-terciario);
     line-height: 16px;
 }
+
+.footer__redes {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+
+    display: grid;
+    place-items: center;
+    background: #e3edf7;
+    padding: 0.8em;
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.btn:hover {
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+        inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+        -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+        0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+        0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transform: translateY(0.5em);
+}
+
+.btn svg {
+    transition: transform 0.5s;
+}
+
+.btn:hover svg {
+    transform: scale(0.9);
+    fill: #333333;
+}
+
 
 .footer__texto-plataforma {
     font-weight: 100;
