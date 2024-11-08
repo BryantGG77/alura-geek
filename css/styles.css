@@ -6,9 +6,11 @@
     --fuente-principal: 'Press Start 2P', cursive;
     --fuente-secundaria: 'IBM Plex Mono', monospace;
 
-    --color-primario: #5300C8;
+    --color-primario: #399cf9;
     --color-secundario: #03318C;
     --color-terciario: #FFFFFF;
+
+
 }
 
 html,
@@ -26,20 +28,142 @@ body {
     justify-content: center;
     align-items: center;
     background: var(--color-primario);
-    box-shadow: inset 23px 23px 46px #2c006a,
-        inset -23px -23px 46px #7a00ff;
+    box-shadow: inset -20px -20px 60px #225e95,
+        inset 20px 20px 60px #50daff;
 
+}
+
+.dark__header {
+    background: #0d161c;
+    box-shadow: inset -41px -41px 74px #0c141a,
+        inset 41px 41px 74px #0e181e;
 }
 
 .logo {
     padding: 20px 0;
-    flex-shrink: 0;
+    max-width: 100%;
 }
 
 /* estilos main */
 
 main {
-    background-color: var(--color-terciario);
+    background-color: #f1f1f1;
+}
+
+
+
+
+/* estilos boton tema */
+
+.switch {
+    margin: 15px 0 0 40px;
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 64px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #73C0FC;
+    transition: .4s;
+    border-radius: 30px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    left: 2px;
+    bottom: 2px;
+    z-index: 2;
+    background-color: #e8e8e8;
+    transition: .4s;
+}
+
+.sun svg {
+    position: absolute;
+    top: 6px;
+    left: 36px;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+}
+
+.moon svg {
+    fill: #73C0FC;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+}
+
+/* .switch:hover */
+.sun svg {
+    animation: rotate 15s linear infinite;
+}
+
+@keyframes rotate {
+
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* .switch:hover */
+.moon svg {
+    animation: tilt 5s linear infinite;
+}
+
+@keyframes tilt {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-10deg);
+    }
+
+    75% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.input:checked+.slider {
+    background-color: #183153;
+}
+
+.input:focus+.slider {
+    box-shadow: 0 0 1px #183153;
+}
+
+.input:checked+.slider:before {
+    transform: translateX(30px);
 }
 
 /*! estilos formulario */
@@ -75,8 +199,9 @@ main {
 }
 
 .formulario__input {
-    border: 3px solid var(--color-secundario);
+    border: 3px solid var(--color-primario);
     border-radius: 30px;
+    background-color: transparent;
     font-family: var(--fuente-secundaria);
     font-size: 1rem;
     color: var(--color-secundario);
@@ -85,11 +210,10 @@ main {
 }
 
 .formulario__input::placeholder {
-    color: var(--color-secundario);
+    color: var(--color-primario);
     font-family: var(--fuente-secundaria);
     font-weight: 600;
     font-size: 1rem;
-
 }
 
 .formulario__botones {
@@ -104,13 +228,13 @@ main {
 .formulario__boton-limpiar {
     border-radius: 15px;
     font-family: var(--fuente-secundaria);
+    background-color: transparent;
     font-size: 1.25rem;
     font-weight: 500;
     padding: 10px;
     width: 50%;
-    background-color: var(--color-terciario);
-    color: var(--color-secundario);
-    border: 3px solid var(--color-secundario);
+    color: var(--color-primario);
+    border: 3px solid var(--color-primario);
 }
 
 .formulario__boton-enviar:hover,
@@ -120,6 +244,8 @@ main {
     border: 3px solid var(--color-primario);
     width: 50%;
 }
+
+
 
 
 .mensaje__error {
@@ -180,11 +306,8 @@ main {
 /* estilos card */
 
 .productos__item {
-    /* -webkit-box-shadow: -7px 7px 9px 0px rgba(0, 0, 0, 0.52);
-    -moz-box-shadow: -7px 7px 9px 0px rgba(0, 0, 0, 0.52);
-    box-shadow: -7px 7px 9px 0px rgba(0, 0, 0, 0.52); */
-    box-shadow: inset -20px -20px 60px #370084,
-        inset 20px 20px 60px #6f00ff;
+    box-shadow: inset -20px -20px 60px #225e95,
+        inset 20px 20px 60px #50daff;
     display: flex;
     /* border: 3px solid black; */
     border-radius: 10px;
@@ -198,7 +321,7 @@ main {
 }
 
 .productos__imagen {
-    border: 3px solid black;
+    border: 3px solid #f1f1f1;
     border-radius: 5px;
     height: 174px;
     object-fit: cover;
@@ -235,6 +358,9 @@ main {
     flex-shrink: 0;
 }
 
+.dark__h2 {
+    color: var(--color-terciario);
+}
 
 
 /* estilos footer */
@@ -244,13 +370,19 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--color-primario);
     color: var(--color-terciario);
     font-family: var(--fuente-secundaria);
     padding: 32px;
     gap: 10px;
-    box-shadow: inset 23px 23px 46px #2c006a,
-        inset -23px -23px 46px #7a00ff;
+    background: var(--color-primario);
+    box-shadow: inset -20px -20px 60px #225e95,
+        inset 20px 20px 60px #50daff;
+}
+
+.dark__footer {
+    background: #0d161c;
+    box-shadow: inset -41px -41px 74px #0c141a,
+        inset 41px 41px 74px #0e181e;
 }
 
 .footer__texto,
@@ -268,8 +400,17 @@ main {
     gap: 10px;
 }
 
-.btn {
+.footer__texto-plataforma {
+    font-weight: 100;
+}
 
+.logo__footer {
+    max-width: 100%;
+}
+
+/* estilos botones footer */
+
+.btn {
     display: grid;
     place-items: center;
     background: #e3edf7;
@@ -301,9 +442,8 @@ main {
     fill: #333333;
 }
 
-
-.footer__texto-plataforma {
-    font-weight: 100;
+.dark {
+    background-color: #1b2832;
 }
 
 
