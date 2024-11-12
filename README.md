@@ -58,5 +58,5 @@ Para ejecutar este proyecto en tu máquina local, sigue los siguientes pasos:
 
 ## Autores
 
-Brayan Velasquez
+**Front End Brayan Velasquez**
   
