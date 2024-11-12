@@ -1,5 +1,8 @@
 # Alura Geek
 
+![Screenshot 2024-11-12 145129](https://github.com/user-attachments/assets/ef42cdef-4f50-4e24-a9ba-ef28c3d060d9)
+
+
 **Alura Geek** es una aplicación de tienda en línea construida como parte de los desafíos de Alura Latam. El proyecto está desarrollado utilizando **HTML**, **CSS** y **JavaScript** para el frontend, y emplea **JSON Server** como simulador de una base de datos para gestionar las solicitudes **GET**, **POST** y **DELETE**.
 
 ## Tabla de Contenidos
