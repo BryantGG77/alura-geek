@@ -59,12 +59,6 @@
       "nombre": "Control Super Nintendo",
       "precio": 450.25,
       "imagen": "https://cdn.pixabay.com/photo/2021/08/16/18/00/nintendo-6550916_960_720.jpg"
-    },
-    {
-      "id": "d750",
-      "nombre": "PlayStation4",
-      "precio": 500,
-      "imagen": "https://cdn.pixabay.com/photo/2017/05/19/14/09/ps4-2326616_960_720.jpg"
     }
   ]
 }

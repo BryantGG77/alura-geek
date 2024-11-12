@@ -47,7 +47,7 @@ body {
 /* estilos main */
 
 main {
-    background-color: #f1f1f1;
+    background-color: #e1dfdf;
 }
 
 
@@ -204,16 +204,21 @@ main {
     background-color: transparent;
     font-family: var(--fuente-secundaria);
     font-size: 1rem;
-    color: var(--color-secundario);
+    color: #0981d6;
     font-weight: 600;
     padding: 15px 10px;
 }
 
 .formulario__input::placeholder {
-    color: var(--color-primario);
+    color: #0981d6;
     font-family: var(--fuente-secundaria);
     font-weight: 600;
     font-size: 1rem;
+}
+
+
+.formulario__input:focus {
+    outline: none;
 }
 
 .formulario__botones {
@@ -243,6 +248,8 @@ main {
     color: var(--color-terciario);
     border: 3px solid var(--color-primario);
     width: 50%;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
 }
 
 
@@ -317,11 +324,19 @@ main {
     padding: 10px;
     width: 196px;
     height: 258px;
-    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.productos__item:hover {
+    box-shadow: inset -20px -20px 60px #01386c,
+        inset 20px 20px 60px #00546b;
+    width: 200px;
+    height: 262px;
+    transition: all 0.2s ease-in;
 }
 
 .productos__imagen {
-    border: 3px solid #f1f1f1;
+    border: 3px solid #e1dfdf;
     border-radius: 5px;
     height: 174px;
     object-fit: cover;
@@ -447,15 +462,13 @@ main {
 }
 
 
-@media (min-width:1150px) {
+@media (min-width:1225px) {
     main {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-around;
         padding: 110px 70px;
     }
-
-
 
     .productos {
         padding: 40px;
