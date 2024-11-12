@@ -47,9 +47,13 @@ Para ejecutar este proyecto en tu máquina local, sigue los siguientes pasos:
    json-server --watch db.json --port 3001
 5. **Abre el archivo index.html en tu navegador para ver la aplicación en funcionamiento, puedes instalar la extensión Live Server para poder correrlo.**
 
-## USO
+## Uso
 
 - Visualizar Productos: Al cargar la aplicación, puedes ver todos los productos listados desde la base de datos de JSON Server.
 - Añadir Productos: Usa el formulario en la sección de administración para agregar nuevos productos.
 - Eliminar Productos: Haz clic en el botón de eliminar para quitar un producto de la lista.
+
+## Autores
+
+Brayan Velasquez
   
