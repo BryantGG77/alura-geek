@@ -40,12 +40,15 @@ Para ejecutar este proyecto en tu máquina local, sigue los siguientes pasos:
    git clone https://github.com/BryantGG77/alura-geek.git
 
 2. **Navega al directorio del proyecto:**
-  cd alura-geek
-3. **Instala JSON Server (si aún no lo tienes):**
+   ```bash
+     cd alura-geek
+4. **Instala JSON Server (si aún no lo tienes):**
+   ```bash
    npm install -g json-server
-4. **Inicia JSON Server:**
+6. **Inicia JSON Server:**
+   ```bash
    json-server --watch db.json --port 3001
-5. **Abre el archivo index.html en tu navegador para ver la aplicación en funcionamiento, puedes instalar la extensión Live Server para poder correrlo.**
+8. **Abre el archivo index.html en tu navegador para ver la aplicación en funcionamiento, puedes instalar la extensión Live Server para poder correrlo.**
 
 ## Uso
 
