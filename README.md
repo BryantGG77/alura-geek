@@ -26,7 +26,7 @@ Este proyecto está enfocado en simular la interacción con un backend utilizand
 - **Agregar Producto:** Los administradores pueden añadir nuevos productos a través de un formulario.
 - **Eliminar Producto:** Los administradores pueden eliminar productos de la tienda.
 - **Responsive Design:** La interfaz se adapta a diferentes tamaños de pantalla.
-- **Tema noche:** El usuario puede cambiar el tema segun lo prefiera para descanso visual.
+- **Tema Noche:** El usuario puede cambiar el tema segun lo prefiera para descanso visual.
 
 ## Tecnologías Utilizadas
 
