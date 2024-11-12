@@ -62,7 +62,8 @@ Para ejecutar este proyecto en tu máquina local, sigue los siguientes pasos:
 
 ## Autores
 
-![IMG_4619](https://github.com/user-attachments/assets/8954c95b-6190-4c86-a295-668aad09fa89)
+
+<img src="https://github.com/user-attachments/assets/8954c95b-6190-4c86-a295-668aad09fa89" alt="IMG_4619" width="300"/>
 
 
 **Front End Brayan Velasquez**
