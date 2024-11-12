@@ -296,6 +296,7 @@ main {
     padding-bottom: 44px;
     gap: 30px;
     overflow-x: auto;
+    padding-top: 20px;
 }
 
 .productos__lista::-webkit-scrollbar {
@@ -330,8 +331,7 @@ main {
 .productos__item:hover {
     box-shadow: inset -20px -20px 60px #01386c,
         inset 20px 20px 60px #00546b;
-    width: 200px;
-    height: 262px;
+    transform: scale(1.08);
     transition: all 0.2s ease-in;
 }
 
@@ -371,6 +371,12 @@ main {
 
 .productos__boton img {
     flex-shrink: 0;
+
+}
+
+.productos__boton img:hover {
+    transform: scale(1.2);
+    transition: all 0.2s ease-in;
 }
 
 .dark__h2 {

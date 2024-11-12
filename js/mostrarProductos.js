@@ -12,7 +12,7 @@ function crearCarta(id, nombre, imagen, precio) {
         <div class="productos__info">
             <p class="productos__precio">$ ${precio}</p>
             <button class="productos__boton" data-id="${id}">
-                <img src="/assets/Vector.png" alt="boton eliminar">
+                <img class="boton__eliminar" src="/assets/Vector.png" alt="boton eliminar">
             </button>
         </div>`;
 
