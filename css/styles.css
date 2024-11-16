@@ -283,6 +283,8 @@ main {
 .mensaje__no-encontrado {
     font-family: var(--fuente-secundaria);
     color: var(--color-primario);
+    text-align: center;
+    padding: 0 16px;
     font-size: 2rem;
     font-weight: 600;
     margin: 0;
@@ -487,6 +489,10 @@ main {
         overflow-x: hidden;
         max-width: 750px;
         max-height: 971px;
+    }
+
+    .mensaje__no-encontrado {
+        padding: 0;
     }
 
     .formulario {
