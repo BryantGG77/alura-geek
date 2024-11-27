@@ -59,6 +59,12 @@
       "nombre": "Brayan",
       "precio": 25.99,
       "imagen": "https://cdn.pixabay.com/photo/2017/05/08/02/22/game-2294201_1280.jpg"
+    },
+    {
+      "id": "f464",
+      "nombre": "Control PlayStation4",
+      "precio": 50,
+      "imagen": "https://cdn.pixabay.com/photo/2018/09/23/02/47/controller-3696656_1280.jpg"
     }
   ]
 }
