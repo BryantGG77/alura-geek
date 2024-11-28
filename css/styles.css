@@ -47,7 +47,7 @@ body {
 /* estilos main */
 
 main {
-    background-color: #e1dfdf;
+    background-color: #dbfbff;
 }
 
 
@@ -338,7 +338,7 @@ main {
 }
 
 .productos__imagen {
-    border: 3px solid #e1dfdf;
+    border: 3px solid #dbfbff;
     border-radius: 5px;
     height: 174px;
     object-fit: cover;
