@@ -1,9 +1,10 @@
 import { conexionAPI } from "./conexionAPI.js";
+import { crearCarta } from "./mostrarProductos.js"; // Importamos la función
 
 const formulario = document.querySelector("[data-formulario]");
 
 async function crearProducto(evento) {
-    evento.preventDefault();  // Prevent form submission
+    evento.preventDefault();
 
     const nombre = document.querySelector("[data-nombre]").value;
     const precio = parseFloat(document.querySelector("[data-precio]").value);
@@ -17,19 +18,24 @@ async function crearProducto(evento) {
             mensaje.textContent = "El precio debe ser un número válido";
             mensaje.classList.add("mensaje__error");
         } else {
-            // Add product to API
-            await conexionAPI.agregarProducto(nombre, precio, imagen);
-            formulario.reset();  // Reset form after product is added
+            const nuevoProducto = await conexionAPI.agregarProducto(nombre, precio, imagen);
+
+            // Crear y agregar la nueva tarjeta al DOM
+            const lista = document.querySelector("[data-lista]");
+            const nuevaCarta = crearCarta(nuevoProducto.id, nombre, imagen, precio);
+            lista.appendChild(nuevaCarta);
+
+            mensaje.textContent = "Producto agregado correctamente";
+            mensaje.classList.add("mensaje__exito");
         }
     } catch (e) {
-        alert(e);
+        console.error(e);
+        mensaje.textContent = "Hubo un error al agregar el producto";
+        mensaje.classList.add("mensaje__error");
+    } finally {
+        setTimeout(() => mensaje.remove(), 3000);
+        formulario.reset();
     }
 }
 
-formulario.addEventListener("submit", (evento) => {
-    console.log("Formulario enviado");
-    evento.preventDefault();
-    crearProducto(evento);
-    return false;
-});
-
+formulario.addEventListener("submit", crearProducto);

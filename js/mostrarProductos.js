@@ -3,7 +3,7 @@ import { eventoBorrarProducto } from "./borrarProducto.js";
 
 const lista = document.querySelector("[data-lista]");
 
-function crearCarta(id, nombre, imagen, precio) {
+export function crearCarta(id, nombre, imagen, precio) {
     const producto = document.createElement("li");
     producto.className = "productos__item";
     producto.innerHTML = `
