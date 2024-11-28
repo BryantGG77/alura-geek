@@ -27,14 +27,16 @@ async function crearProducto(evento) {
 
             mensaje.textContent = "Producto agregado correctamente";
             mensaje.classList.add("mensaje__exito");
+            formulario.reset();
+
         }
     } catch (e) {
         console.error(e);
         mensaje.textContent = "Hubo un error al agregar el producto";
         mensaje.classList.add("mensaje__error");
+
     } finally {
         setTimeout(() => mensaje.remove(), 3000);
-        formulario.reset();
     }
 }
 
